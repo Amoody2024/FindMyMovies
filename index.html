@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find My Movies</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="searchBox" class="text-decor">
+        <table class="decor">
+            <tr><td>
+                <input type="text" id="textBox" placeholder="Enter a Movie" required>
+            </td></tr>
+            <tr><td>
+                <input type="radio" class="radioButton" name="typeSelection" id="movie" checked onclick="radioButton()">
+                <label for="movie">Movie</label>
+                
+                <input type="radio" class="radioButton" name="typeSelection" id="show" onclick="radioButton()">
+                <label for="show">Show/Series</label>
+            </td></tr>
+            <tr><td style="text-align: center;">
+                <button type="button" onclick="search()">Search</button>
+            </td></tr>
+        </table>
+    </div>
+
+    <div id="info" class="text-decor" hidden>
+        <button type="button" id="backButton" onclick="back()"><</button>
+        <div id="infoLayout">
+            <div>
+                <img src="" alt="Unloaded Image" id="posterImage">
+            </div>
+
+            <div>
+                <p id="infoBox"></p>
+                <div id="providerBox"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
