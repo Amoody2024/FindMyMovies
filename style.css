@@ -11,6 +11,43 @@ body{
     border-radius: 25px;
 }
 
+#posterImage{
+    width: 100%;
+}
+
+.scrollButtons{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    font-size: 100%;
+}
+
+button{
+    border-radius: 25px;
+    border-color: transparent;
+}
+
+button:hover{
+    background-color: #d3d3d3;
+    transition: 0.25s ease;
+    transform: scale(1.1);
+}
+
+.scrollButton{
+    width: 15%;
+    font-size: 100%;
+}
+
+p{
+    line-height: 1.25;
+}
+
+.scrollButton:active{
+    transition: 0.1s ease;
+    transform: scale(0.8);
+}
+
 #backButton{
     width: 550px;
     font-size: 30px;
@@ -54,15 +91,6 @@ body{
     font-family: Arial, Helvetica, sans-serif;
 }
 
-button{
-    border-radius: 25px;
-    border-color: transparent;
-}
-
-button:hover{
-    background-color: #d3d3d3;
-}
-
 @media (max-width: 600px) {
     body{
         background-color: black;
@@ -84,11 +112,17 @@ button:hover{
         font-size: 16px;
     }
 
+    #infoLayout{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
     .decor{
-        flex-direction: column-reverse;
+        display: flex;
+        flex-direction: column;
         justify-content: center;
         margin: 25%;
-        transform: scale(1.2);
         margin-left: 10%;
         margin-right: 10%;
         align-items: center;
@@ -97,7 +131,7 @@ button:hover{
     }
 
     #backButton{
-        width: 290px;
+        width: 100%;
         font-size: 30px;
     }
 
@@ -106,7 +140,7 @@ button:hover{
     }
 
     #posterImage{
-    width: 290px;
+    width: 100%;
     }
 
     h2{
