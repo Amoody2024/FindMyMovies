@@ -10,7 +10,7 @@
     <div id="searchBox" class="text-decor">
         <table class="decor">
             <tr><td>
-                <input type="text" id="textBox" placeholder="Enter a Movie" required>
+                <input type="text" id="textBox" spellcheck="true" placeholder="Enter a Movie" required>
             </td></tr>
             <tr><td>
                 <input type="radio" class="radioButton" name="typeSelection" id="movie" checked onclick="radioButton()">
@@ -30,6 +30,11 @@
         <div id="infoLayout">
             <div>
                 <img src="" alt="Unloaded Image" id="posterImage">
+
+                <div class="scrollButtons">
+                    <button type="button" class="scrollButton" id="backward" onclick="scrollButtons()"><</button>
+                    <button type="button" class="scrollButton" id="forward" onclick="scrollButtons()">></button>
+                </div>
             </div>
 
             <div>
