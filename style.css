@@ -127,6 +127,7 @@ p{
         margin-right: 10%;
         align-items: center;
         height: 10%;
+        transform: scale(1);
         padding: 40px;
     }
 
