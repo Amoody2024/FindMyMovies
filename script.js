@@ -1,7 +1,7 @@
 const searchBox = document.getElementById("searchBox");
 const infoBox = document.getElementById("info");
 
-const textBox = document.getElementById("textBox");
+const textBox = document.querySelector("#textBox");
 const radioMovie = document.getElementById("movie");
 const radioShow = document.getElementById("show");
 
@@ -9,6 +9,7 @@ const providerBox = document.getElementById("providerBox");
 
 const forwardButton = document.getElementById("forward");
 const backwardButton = document.getElementById("backward");
+const backButton = document.querySelector("#backButton")
 
 let base_url = "https://api.themoviedb.org/3/search/movie?api_key=5ee27fb0df47b96f71fb0b700b30b96c&query=";
 let provider_base_url = "https://api.themoviedb.org/3/movie/id/watch/providers?api_key=5ee27fb0df47b96f71fb0b700b30b96c";
@@ -22,6 +23,11 @@ let userInput;
 
 let searchPlacement = 0;
 
+
+    textBox.addEventListener("keydown", function(key) {
+        if (key.key === "Enter") {search();}
+    });
+    
 
 function radioButton()
 {
